@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <%
+    // JSP로 DB 연결 방법 1/4
+    
+    
+    // 1. sql package import
+    // 2. jdbc driver loading
+    //    	src-main-webapp-WEB-INF-lib 이 위치에 드라이버 파일 넣기
+    //		mysql-connector-java-8.0.26.jar
+    	
+    	String driverClass = "com.mysql.jdbc.Driver";
+    	Class.forName(driverClass);
+    	
+    // 3. Connection Object
+    	Connection conn = null;
+    
+    	String url = "jdbc:mysql://localhost:3307/";
+    	String id = "root";
+    	String pw = "0000";
+    
+    %>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+</body>
+</html>

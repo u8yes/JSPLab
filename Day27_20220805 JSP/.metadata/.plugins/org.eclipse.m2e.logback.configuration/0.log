@@ -1,0 +1,34 @@
+2022-08-05 15:43:35,226 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-08-11 09:49:09,376 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-08-11 10:27:19,563 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-08-11 10:27:26,356 [Worker-9: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: test:TestHome2:1.0.0 @ D:\dev\JavaLab\TestHome2\pom.xml.
+2022-08-11 10:27:26,811 [Worker-9: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: test:Day17_220722WEB:1.0.0 @ D:\dev\JavaLab\Day17_220722WEB\pom.xml.
+2022-08-11 10:27:27,587 [Worker-9: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: test:Mobile:1.0.0 @ D:\dev\JavaLab\Mobile\pom.xml.
+2022-08-11 10:27:28,267 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2022-08-11 10:27:28,574 [Worker-9: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: test:MobileEGov:1.0.0 @ D:\dev\JavaLab\MobileEGov\pom.xml.
+2022-08-11 10:27:28,711 [Worker-9: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: egov:template-simple:4.0.0 @ D:\dev\JavaLab\TestHome\pom.xml.
+2022-08-11 10:27:32,986 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2022-08-11 10:27:34,141 [Worker-9: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2022-08-11 10:30:14,598 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:30:14,602 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 10:30:14,605 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:30:14,605 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 10:30:20,352 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2022-08-11 10:30:20,443 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:30:20,461 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 757 resources
+2022-08-11 10:30:22,045 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:30:22,046 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 10:30:40,739 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2022-08-11 10:30:40,852 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:30:40,857 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 757 resources
+2022-08-11 10:30:42,728 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:30:42,729 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 10:34:55,457 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:34:55,458 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 75 resources
+2022-08-11 10:34:55,569 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:34:55,569 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 10:34:57,824 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:34:57,825 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 10:34:57,826 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-11 10:34:57,827 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-11 11:03:32,570 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
