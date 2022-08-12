@@ -9,6 +9,19 @@
 <body>
 	<h2>Scripting Tag</h2>
 	
+	
+	
+	<%	// 스크립틀릿 scriptlet
+	
+	for (int i = 1; i < count; i++){
+		out.print("Java Server Pages " + i + "<br>");
+	}	// 자바 일반 코드 작성
+	
+	%>
+	
+	<!-- 표현문 태그 - 메서드를 호출하여 그 결과를 문자열 형태로 출력 -->
+	<%= makeItLower("Hello World") %>
+	
 	<%! // 선언문 declaration 
 	
 	int count = 3; // 선언문 태그를 사용하여 변수 선언
@@ -18,15 +31,5 @@
 	}	// 선언문 태그를 사용하여 메서드 선언
 	
 	%>
-	<%	// 스크립틀릿 scriptlet
-	
-	for (int i = 1; i < count; i++){
-		out.print("Java Server Pages " + i + "<br>");
-	}	// 자바 일반 코드 작성
-	
-	%>
-	<!-- 표현문 태그 - 메서드를 호출하여 그 결과를 문자열 형태로 출력 -->
-	<%= makeItLower("Hello World") %>
-	
 </body>
 </html>
