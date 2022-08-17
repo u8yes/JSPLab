@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\dev\JSPLab\Day33_WebMarket2_20220816"/>
 			<item value="D:\dev\JSPLab\Day31_20220811 visitSite"/>
 			<item value="D:\dev\JSPLab"/>
 		</list>

@@ -30,8 +30,9 @@ public class SelectServlet extends HttpServlet {
 		String fruit = request.getParameter("fruit");
 		
 		String  res  = "<html>";
-				res += "<h3>";
-				res += "Selected fruit : ";
+		res += "<h3>";
+		res += "Selected fruit : ";
+				
 				try{
 					res += fruit;
 					res += "</h3>";
@@ -44,6 +45,7 @@ public class SelectServlet extends HttpServlet {
 					res += "</html>";
 					
 					response.getWriter().print("Selected fruit : error");
+
 				};
 				
 		
