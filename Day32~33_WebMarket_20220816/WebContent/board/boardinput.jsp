@@ -24,8 +24,8 @@
 	
 	PreparedStatement pstmt = null;
 
-	String sql = "INSERT INTO board VALUES(?,?)";
-		
+	String sql="INSERT INTO board (btitle,bmemo) VALUES(?,?)";
+	
 	pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, title);
 		pstmt.setString(2, memo);

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Daty32_JSPClass_20220812">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Daty32_JSPClass_20220812"/>
-        <property name="java-output-path" value="/Daty32_JSPClass_20220812/build/classes"/>
-    </wb-module>
-</project-modules>
