@@ -10,14 +10,14 @@ public class DAOMember {
 	
 	// C create R read U update D delete
 	//회원 가입 (테이블에 데이터 넣기)
-	public static int join(String pid, String pname, String pdesc, String pprice, String pfilename) throws NamingException, SQLException {
+	public static int join(String pid, String pname, String pdesc, String pprice) throws NamingException, SQLException {
 		
 		
 		
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		
-		String sql = "INSERT INTO member (pid, pname, pdesc, pprice) VALUES(?,?,?,?,?)";
+		String sql = "INSERT INTO member (pid, pname, pdesc, pprice, pfilename) VALUES(?,?,?,?,?)";
 		//Connection Pool 이용
 		conn= ConnectionPool.get();
 		
