@@ -11,9 +11,16 @@
 <%
 	String no = request.getParameter("no");
 
-	DAOcustomer.getDetail(no);
+	DTOcustomer member = DAOcustomer.getDetail(no);
+	
+
+%>	
+	<%= member.getNo() %>
+	<%= member.getId() %>
+	<%= member.getName() %>
+	<%= member.getPass() %>
+	<%= member.getCdate() %>
 
 
-%>
 </body>
 </html>

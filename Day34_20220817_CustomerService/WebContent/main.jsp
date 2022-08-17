@@ -20,7 +20,8 @@
 		
 %>		
 	<%=member.getNo() %>		
-	<a href ="detail.jsp?no=<%=member.getNo() %>"><%=member.getId() %></a>
+	<a href ="detail.jsp?no=<%=member.getNo() %>">
+	<%=member.getId() %></a>
 	<br>
 <%	
 	}

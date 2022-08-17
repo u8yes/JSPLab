@@ -9,13 +9,13 @@
 <% 
 	request.setCharacterEncoding("utf-8");
 
-	String mname=request.getParameter("pid");
+	String pid=request.getParameter("pid");
 	String pname=request.getParameter("pname");
 	String pdesc=request.getParameter("pdesc");
 	String pprice=request.getParameter("pprice");
-	String pfilename=request.getParameter("pfilename");
 	
-	DAOMember.join(pid, pname, pdesc, pprice, pfilename);
+	
+	DAOMember.join(pid, pname, pdesc, pprice);
  	
 %>
    

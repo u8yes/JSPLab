@@ -35,26 +35,26 @@ public class DAOcustomer {
 	}
 	
 	public static int login(String id, String pass) throws NamingException, SQLException {
+		
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		int result = 0;
+		
+		String sql = "SELECT id, pass FROM customer WHERE id=?";
+		conn = ConnectionPool.get();
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, id);
 			
-			Connection conn = null;
-			PreparedStatement stmt = null;
-			ResultSet rs = null;
-			
-			int rs = 0;
-			
-			String sql = "SELECT id, pass FROM customer WHERE id=?";
-			conn = ConnectionPool.get();
-			stmt = conn.prepareStatement(sql);
-				stmt.setString(1, id);
-				
-			rs = stmt.executeQuery();
-			
-			if(rs.next()) return 3;
-			
-			if(pass.equals(rs.getString("pass"))) return 1;
-			
-			return 2;
-			
+		rs = stmt.executeQuery();
+		
+		if(!rs.next()) return 3;
+		
+		if(pass.equals(rs.getString("pass"))) return 1;
+		
+		return 2;
+		
 	}
 	
 	public static ArrayList<DTOcustomer> getList() throws NamingException, SQLException {
@@ -73,10 +73,10 @@ public class DAOcustomer {
 		
 		while(rs.next()) {
 			members.add(new DTOcustomer(rs.getString(1),
-														   rs.getString(2),
-														   rs.getString(3),
-														   rs.getString(4),
-														   rs.getString(5)));
+									   rs.getString(2),
+									   rs.getString(3),
+									   rs.getString(4),
+									   rs.getString(5)));
 		}
 		
 		return members;
@@ -91,7 +91,7 @@ public class DAOcustomer {
 		
 		conn = ConnectionPool.get();
 		stmt = conn.prepareStatement(sql);
-		stmt.setString(1,  no);
+			stmt.setString(1,  no);
 		rs = stmt.executeQuery();
 		
 		rs.next();

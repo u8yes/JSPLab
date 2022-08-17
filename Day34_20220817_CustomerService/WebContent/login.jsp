@@ -4,23 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>Insert title here</title>
 
-
- 
-
-    <title>Insert title here</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
     
-
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
-
-<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-
 
 
     <!-- Favicons -->
@@ -89,12 +78,15 @@
     
     <!-- Custom styles for this template -->
     <link href="css/signin.css" rel="stylesheet">
+    
   </head>
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form action="logincheck.jsp" >
-    <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+
+
+  <form action="logincheck.jsp">
+    <img class="mb-4" src="http://austiny.snu.ac.kr/image/mine.jpg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">로그인 하세요</h1>
 
     <div class="form-floating">
@@ -102,7 +94,7 @@
       <label for="floatingInput">아이디</label>
     </div>
     <div class="form-floating">
-      <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" name="pass"  class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">패스워드</label>
     </div>
 
@@ -117,9 +109,6 @@
 </main>
 
 
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
   </body>
 </html>

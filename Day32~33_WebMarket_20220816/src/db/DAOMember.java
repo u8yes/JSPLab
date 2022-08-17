@@ -13,11 +13,11 @@ public class DAOMember {
 	public static int join(String pid, String pname, String pdesc, String pprice, String pfilename) throws NamingException, SQLException {
 		
 		
-		try {
+		
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		
-		String sql = "INSERT INTO member (pid, pname, pdesc, pprice, pfilename) VALUES(?,?,?,?,?)";
+		String sql = "INSERT INTO member (pid, pname, pdesc, pprice) VALUES(?,?,?,?,?)";
 		//Connection Pool 이용
 		conn= ConnectionPool.get();
 		
@@ -33,11 +33,7 @@ public class DAOMember {
 		
 		return result;
 		
-		} catch (Exception e) {
-			
 		
-			
-		}
 		
 	}
 
