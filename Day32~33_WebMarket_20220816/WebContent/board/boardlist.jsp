@@ -48,6 +48,12 @@ for (DTOboard file : files) {
 </div>
 
 	<br>
+	
+	
+	<div align="center" class="row justify-content-center d-grid gap-2 col-6 mx-auto">
+	
+	<a class="btn btn-primary" href="boardinputpage.jsp">사진 등록</a>
+	</div>
 
 <%@ include file = "../footer.jsp" %>
 
