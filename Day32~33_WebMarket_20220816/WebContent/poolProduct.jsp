@@ -6,18 +6,17 @@
     
   
 
-<% 
-	request.setCharacterEncoding("utf-8");
+<%
+      	request.setCharacterEncoding("utf-8");
 
-	String pid=request.getParameter("pid");
-	String pname=request.getParameter("pname");
-	String pdesc=request.getParameter("pdesc");
-	String pprice=request.getParameter("pprice");
-	
-	
-	DAOMember.join(pid, pname, pdesc, pprice);
- 	
-%>
+            	String pid=request.getParameter("pid");
+            	String pname=request.getParameter("pname");
+            	String pdesc=request.getParameter("pdesc");
+            	String pprice=request.getParameter("pprice");
+            	
+            	
+            	DAOboard.join(pid, pname, pdesc, pprice);
+      %>
    
     
     

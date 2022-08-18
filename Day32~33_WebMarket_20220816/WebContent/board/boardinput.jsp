@@ -1,41 +1,50 @@
-자료를 받는 코드  boardinput.jsp
-
-
+<%@page import="db.*"%>
+<%@page import="util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ page import="org.apache.commons.fileupload.*" %>    
+<%@ page import="org.apache.commons.fileupload.disk.*" %>    
+<%@ page import="org.apache.commons.fileupload.servlet.*" %>
 
-<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>    
 
 <%
-	
-	String title = request.getParameter("title");
-	String memo = request.getParameter("memo");
-	
-	String driverClass = "com.mysql.jdbc.Driver";
-	Class.forName(driverClass);
-	
-	Connection conn = null;
+    	String title = null;
+    	String content = null;
+    	String iname = null;
+    	byte[] ifile = null;
 
-	String url = "jdbc:mysql://localhost:3307/webmarket";
-	String id = "root";
-	String pw = "0000";
-	
-	conn = DriverManager.getConnection(url, id, pw);
-	
-	PreparedStatement pstmt = null;
+    	ServletFileUpload sfu = new ServletFileUpload(new DiskFileItemFactory());
 
-	String sql="INSERT INTO board (btitle,bmemo) VALUES(?,?)";
-	
-	pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1, title);
-		pstmt.setString(2, memo);
+    	List items = sfu.parseRequest(request);
 
-	pstmt.executeUpdate();
-	
-	pstmt.close();
-	conn.close();
-	
-%>
+    	Iterator iter = items.iterator();
+    	
+    	while(iter.hasNext()){
+    		FileItem item = (FileItem) iter.next();
+    		String name = item.getFieldName(); //키값 즉 이름을 추출
+    		
+    		if(item.isFormField()) {
+    	//제목,내용 등 사진을 제외한 나머지 항목들을 차례대로 추출
+    	String value = item.getString("utf-8");
+    	if (name.equals("title")) title = value;
+    	else if (name.equals("content")) content = value;
 
-</body>
-</html>
+    		} else {
+    	//사진에 관련된 즉 사진이름과 사진파일 추출
+    	if (name.equals("image")) {
+    			iname = item.getName();
+    			ifile = item.get();
+    			
+    			String root = application.getRealPath(java.io.File.separator);
+    			FileUtil.saveImage(root,iname,ifile);
+    			
+    	}
+    		}
+    	}
+
+    	DAOboard.boardinsert(title, content, iname);
+    	
+    	response.sendRedirect("boardlist.jsp");
+    %>
