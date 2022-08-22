@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="util.ConnectionPool"/>
+    <fullyQualifiedTypeName name="db.DTOmember"/>
 </qualifiedTypeNameHistroy>
