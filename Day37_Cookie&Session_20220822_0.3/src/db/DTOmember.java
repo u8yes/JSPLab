@@ -89,12 +89,7 @@ public class DTOmember {
 		this.miname = miname;
 		this.mdate = mdate;
 	}
-	
-	
-	
-	
-	
-	
+
 	
 	
 	

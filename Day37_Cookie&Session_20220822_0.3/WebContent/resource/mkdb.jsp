@@ -1,48 +1,60 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<% //SQL 패키지 임포트 %>
+<%@ page import="java.sql.*"%>
 
-    
-   <% //JSP로 DB연결방법 1/4 %>
-    
-    <%@ page import ="java.sql.*" %>
-    
-    <%  //1.sql package import 
-    	//2. jdbc driver loading
-    	// src - main - webapp - WEB-INF - lib 이 위치에 드라이버 파일을 넣기 
-    	//mysql-connector-java-8.0.26.jar
-		
-			String driverClass = "com.mysql.jdbc.Driver";
-    		Class.forName(driverClass);
-    	
-    	//3.Connection Object 
-    		
-    		Connection conn =  null;
-    	
-    		String url = "jdbc:mysql://localhost:3307/";
-    		String id = "root";
-    		String pw = "0000";
-    		
-    		conn = DriverManager.getConnection(url, id, pw);
-    		
-   		//4.statement Object
-   		
-   			PreparedStatement pstmt = null; //구문 객체 초기화
-   		
-   			String sql = "CREATE DATABASE webmarket";
-   			pstmt = conn.prepareStatement(sql);
-   			
- 		//5. SQL Execute
- 		
- 			pstmt.executeUpdate();
-		
- 		//6. ResultSet Object
- 		//미 실시 (sql 실행 결과 수신)
- 		
- 		//7. Connection Close
- 		
- 			pstmt.close();
- 			conn.close();
- 			
- 			
-		
-		%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SQL package import</title>
+</head>
+<body>
+<%
+    // JDBC 드라이버 로딩
+    String driverClass = "com.mysql.jdbc.Driver";
+
+	try {
+		Class.forName(driverClass);
+		out.print(" JDBC Driver loading 성공!!<br>");
+	}catch (ClassNotFoundException e) {
+		out.print("JDBC Driver loading 실패!!<br>");
+	}
+
+	// MySQL 데이터베이스 서버 연결 설정
+	String url = "jdbc:mysql://localhost:3306/";
+	String id = "root";
+	String pw = "0000";
+	
+	// connection object 생성
+	Connection conn = null;
+	
+	// connection MySQL 서버연결
+	try {
+		conn = DriverManager.getConnection(url, id, pw);
+		out.print("MySQL 서버 연결 성공!!!<br>");
+	} catch (SQLException e) {
+		out.print("MySQL 서버 연결 실패!!!<br>");
+	} 
+	
+	// SQL  구문 객체 작성
+	
+	String sql = "CREATE DATABASE webmarket";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+
+	// SQL 구문 실행
+	
+	try{
+	pstmt.executeUpdate();
+	out.print("데이터베이스 생성 성공!!!<br>");
+	} catch (SQLException e) {
+	out.print("데이터베이스 생성 실패!!!<br>");
+	out.print(e.getMessage() + "<br>");
+	}
+	
+	
+%>
+</body>
+</html>

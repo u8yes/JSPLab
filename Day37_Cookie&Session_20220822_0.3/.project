@@ -3,8 +3,8 @@
 	<name>Day37_Cookie&amp;Session_20220822_0.3</name>
 	<comment></comment>
 	<projects>
-		<project>mysql-connector-java-8.0.26</project>
 		<project>commons-fileupload-1.4</project>
+		<project>mysql-connector-java-8.0.26</project>
 		<project>commons-io-2.11.0</project>
 	</projects>
 	<buildSpec>

@@ -21,20 +21,20 @@
 	String img1 =  file.getPfilename1();
 	String imgstr1 = "";
 	if (img1 != null) {
-		imgstr1 = "images/" + img1; // images 폴더는 product를 나가야 있다.
+		imgstr1 = "../images/" + img1; // images 폴더는 product를 나가야 있다.
 	} 
 
 	String img2 =  file.getPfilename2();
 	String imgstr2 = "";
 	if (img2 != null) {
-		imgstr2 = "images/" + img2; // images 폴더는 product를 나가야 있다.
+		imgstr2 = "../images/" + img2; // images 폴더는 product를 나가야 있다.
 	} 
 
 
 	String img3 =  file.getPfilename3();
 	String imgstr3 = "";
 	if (img3 != null) {
-		imgstr3 = "images/" + img3; // images 폴더는 product를 나가야 있다.
+		imgstr3 = "../images/" + img3; // images 폴더는 product를 나가야 있다.
 	} 
 
 

@@ -1,7 +1,6 @@
 package db;
 
 public class DTOproduct {
-
 	
 	private String pid;
 	private String pname;
@@ -10,6 +9,7 @@ public class DTOproduct {
 	private String pfilename1;
 	private String pfilename2;
 	private String pfilename3;
+	
 	
 	public String getPid() {
 		return pid;
@@ -53,7 +53,6 @@ public class DTOproduct {
 	public void setPfilename3(String pfilename3) {
 		this.pfilename3 = pfilename3;
 	}
-	
 	public DTOproduct(String pid, String pname, String pdesc, String pprice, String pfilename1, String pfilename2,
 			String pfilename3) {
 		super();
@@ -68,7 +67,5 @@ public class DTOproduct {
 	
 	
 	
-	
-	
-	
+
 }

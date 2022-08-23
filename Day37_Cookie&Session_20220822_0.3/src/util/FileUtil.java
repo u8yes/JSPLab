@@ -4,28 +4,20 @@ import java.io.*;
 
 public class FileUtil {
 	
-	public static void saveImage(String root, String pimagename, byte[] pimagefile) throws IOException {
+	public static void saveImage(String root, String iname, byte[] ifile) throws IOException {
+		
+		if (iname == null) {
+			return;
+		}
 		
 		root += "/images";
 		File f = new File(root);
 		
+		if (!f.exists()) f.mkdir();
 		
-		if(!f.exists()) {
-			f.mkdir();
-		}
-		
-		f = new File(root + "/" + pimagename);
-		
+		f = new File(root + "/" + iname);
 		FileOutputStream out = new FileOutputStream(f);
-		
-		out.write(pimagefile);
-		
-		out.close();
-		
-		
+		out.write(ifile);
+		out.close();	
 	}
-	
-	
-
-	
 }
