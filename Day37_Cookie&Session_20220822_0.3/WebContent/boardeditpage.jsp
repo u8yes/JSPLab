@@ -73,7 +73,7 @@ DTOboard board = DAOboard.boardEdit(author);
 	</div>
 	<br>
 	<div class="container">
-	  <textarea  name="content" class="summernote" value="<%=board.getContent() %>"></textarea>    
+	  <textarea  name="content" class="summernote" value="야 들어가!!!"></textarea>    
 	</div>
 	
 	<script>
