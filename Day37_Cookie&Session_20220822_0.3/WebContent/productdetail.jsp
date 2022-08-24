@@ -16,22 +16,22 @@
 <%
 	String pid = request.getParameter("pid");
 
-	DTOproduct file = DAOproduct.productDetail(pid);
+	DTOproduct product = DAOproduct.productDetail(pid);
 	
-	String img1 =  file.getPfilename1();
+	String img1 =  product.getPfilename1();
 	String imgstr1 = "";
 	if (img1 != null) {
 		imgstr1 = "../images/" + img1; // images 폴더는 product를 나가야 있다.
 	} 
 
-	String img2 =  file.getPfilename2();
+	String img2 =  product.getPfilename2();
 	String imgstr2 = "";
 	if (img2 != null) {
 		imgstr2 = "../images/" + img2; // images 폴더는 product를 나가야 있다.
 	} 
 
 
-	String img3 =  file.getPfilename3();
+	String img3 =  product.getPfilename3();
 	String imgstr3 = "";
 	if (img3 != null) {
 		imgstr3 = "../images/" + img3; // images 폴더는 product를 나가야 있다.
@@ -50,17 +50,17 @@
 	 
 	
 	<br><br>
-	<%=file.getPid()%>
-	<%=file.getPname()%>
-	<%=file.getPdesc()%>
-	<%=file.getPprice()%>
+	<%=product.getPid()%>
+	<%=product.getPname()%>
+	<%=product.getPdesc()%>
+	<%=product.getPprice()%>
 	
 	
 	
 	<br><br>
 	<div class="d-grid gap-2 col-6 mx-auto">
-	<a class="btn btn-primary" href="productlist.jsp" target="_blank" role="button">목록</a>
-	<a class="btn btn-secondary" href="productinputpage.jsp" target="_blank" role="button">사진 등록</a>
+	<a class="btn btn-secondary" href="productlist.jsp" target="_blank" role="button">제품목록</a>
+	<a class="btn btn-secondary" href="deliverypage.jsp?pid=<%=product.getPid()%>&pname=<%=product.getPname() %>&pprice=<%=product.getPprice()  %>" role="button">제품구매</a>
 	</div> 
 </body>
 </html>

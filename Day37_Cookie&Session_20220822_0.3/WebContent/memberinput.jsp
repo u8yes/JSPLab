@@ -44,7 +44,7 @@
 
 		} else {
 			//사진에 관련된 즉 사진이름과 사진파일 추출
-			if (name.equals("image1")) {
+			if (name.equals("image")) {
 				miname = item.getName();
 				mimagefile = item.get();
 					

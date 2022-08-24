@@ -61,7 +61,7 @@
 				pimagefile3 = item.get();
 					
 					String root = application.getRealPath(java.io.File.separator);
-					FileUtil.saveImage(root,pimagename2,pimagefile2);					
+					FileUtil.saveImage(root,pimagename3,pimagefile3);					
 				
 			}
 			
