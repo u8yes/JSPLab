@@ -20,25 +20,34 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">제목</th>
-      <th scope="col">작성자</th>
-      <th scope="col">작성시간</th>
+      <th scope="col">번호</th>
+      <th scope="col">구매자</th>
+      <th scope="col">구매물품</th>
+      <th scope="col">주소</th>
+      <th scope="col">전화번호</th>
+      <th scope="col">가격</th>
+      <th scope="col">구매일</th>
+      <th scope="col">상태</th>
     </tr>
   </thead>
   <tbody>
   
   <%
-ArrayList<DTOboard> boards = DAOboard.boardlist();
+ 	mname = (String)session.getAttribute("mname");
+	ArrayList<DTOdelivery> deliverys = DAOdelivery.deliveryList();
 
-for (DTOboard board : boards) {
+for (DTOdelivery delivery : deliverys) {
 %>		
 
     <tr>
-      <th scope="row"><%=board.getBid()%></th>
-      <td>	<a href="boarddetail.jsp?bid=<%=board.getBid() %>"><%=board.getTitle() %></a></td>
-      <td><%=board.getAuthor() %></a></td>
-      <td><%=board.getBdate() %></a></td>
+      <th scope="row"><%=delivery.getDid()%></th>
+      <td>	<a href="deliverydetail.jsp?bid=<%=mname %>"></a></td>
+      <td><%=delivery.getAuthor() %></a></td>
+      <td><%=delivery.getBdate() %></a></td>
+      <td><%=delivery.getBdate() %></a></td>
+      <td><%=delivery.getBdate() %></a></td>
+      <td><%=delivery.getBdate() %></a></td>
+      <td><%=delivery.getBdate() %></a></td>
     </tr>
 <% 	
 	}
@@ -49,7 +58,7 @@ for (DTOboard board : boards) {
 </table>
 </div>
  <div class="d-grid gap-2 col-6 mx-auto">
-<a href="boardinputpage.jsp" class="btn btn-secondary" role="button">게시물 작성</a>
+<a href="deliveryinputpage.jsp" class="btn btn-secondary" role="button">게시물 작성</a>
  </div>
 	<br>	<br>	<br>
 

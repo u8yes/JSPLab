@@ -2,7 +2,9 @@ package db;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import javax.naming.NamingException;
 
@@ -34,7 +36,33 @@ public class DAOdelivery {
 		return result;
 	}
 	
-	
+	public static ArrayList<DTOdelivery> deliveryList() throws NamingException, SQLException{
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		String sql = "SELECT * FROM delivery";
+		
+		conn = ConnectionPool.get();
+		stmt = conn.prepareStatement(sql);
+		rs = stmt.executeQuery();
+		
+		ArrayList<DTOdelivery> delivery = new ArrayList<DTOdelivery>();
+		
+		while(rs.next()) {
+			delivery.add(new DTOdelivery(rs.getString(1),
+										rs.getString(2),
+										rs.getString(3),
+										rs.getString(4),
+										rs.getString(5),
+										rs.getString(6),
+										rs.getString(7),
+										rs.getString(8),
+										rs.getString(9),
+										rs.getString(10)));
+		}
+		return delivery;
+	}
 	
 	
 }
