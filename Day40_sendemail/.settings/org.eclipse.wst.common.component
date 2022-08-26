@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
             
     
-    <wb-module deploy-name="Day40_sendemail">
+    <wb-module deploy-name="Day40_day41_sendemail">
                         
         
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
@@ -37,8 +37,8 @@
         </dependent-module>
                         
         
-        <property name="java-output-path" value="/Day40_sendemail/build/classes"/>
-        <property name="context-root" value="Day40_sendemail"/>
+        <property name="java-output-path" value="/Day40_day41_sendemail/build/classes"/>
+        <property name="context-root" value="Day40_day41_sendemail"/>
                     
     
     </wb-module>

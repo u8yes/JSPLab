@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.commons-fileupload
+Built-By: tjouen-jr
+Bnd-LastModified: 1661499466960
+Implementation-Vendor-Id: org.apache
+Specification-Title: Apache Commons FileUpload
+Bundle-DocURL: http://commons.apache.org/proper/commons-fileupload/
+DynamicImport-Package: javax.portlet
+Bundle-Name: Apache Commons FileUpload
+Implementation-Title: Apache Commons FileUpload
+Bundle-Description: The Apache Commons FileUpload component provides a
+  simple yet flexible means of adding support for multipart    file up
+ load functionality to servlets and web applications.
+Implementation-Version: 1.4
+Specification-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-3.5.0.201709291849
+Implementation-Vendor: The Apache Software Foundation
+Originally-Created-By: Maven Integration for Eclipse
+Bundle-Version: 1.4.0
+X-Compile-Target-JDK: 1.6
+Implementation-Build: ${scmBranch}@r${buildNumber}; 2022-08-26 06:22:1
+ 4+0000
+X-Compile-Source-JDK: 1.6
+Build-Jdk: 1.8.0_202
+Implementation-URL: http://commons.apache.org/proper/commons-fileuploa
+ d/
+Created-By: Apache Maven Bundle Plugin
+Specification-Version: 1.4
+

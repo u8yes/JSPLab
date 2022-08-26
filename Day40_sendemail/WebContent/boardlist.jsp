@@ -28,7 +28,7 @@
   </thead>
   <tbody>
   
-  <%
+<%
 ArrayList<DTOboard> boards = DAOboard.boardlist();
 
 for (DTOboard board : boards) {

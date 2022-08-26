@@ -1,19 +1,21 @@
 <%@page import="db.*"%>
 <%@page import="java.util.*"%>
+<%@page import="java.sql.*"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>배송 관리</title>
 </head>
 <body>
 <%@ include file = "../header.jsp" %>
 
 <div class="alert alert-secondary" role="alert">
 <div class="container">
-	<h1 class = "display-3">게시판 목록</h1>
+	<h1 class = "display-3">배송 관리</h1>
 </div>	
 </div>
 <div class="container w-70">
@@ -33,21 +35,39 @@
   <tbody>
   
   <%
- 	mname = (String)session.getAttribute("mname");
-	ArrayList<DTOdelivery> deliverys = DAOdelivery.deliveryList();
+ArrayList<DTOdelivery> deliverys = DAOdelivery.deliverylist();
 
 for (DTOdelivery delivery : deliverys) {
 %>		
 
     <tr>
       <th scope="row"><%=delivery.getDid()%></th>
-      <td>	<a href="deliverydetail.jsp?bid=<%=mname %>"></a></td>
-      <td><%=delivery.getAuthor() %></a></td>
-      <td><%=delivery.getBdate() %></a></td>
-      <td><%=delivery.getBdate() %></a></td>
-      <td><%=delivery.getBdate() %></a></td>
-      <td><%=delivery.getBdate() %></a></td>
-      <td><%=delivery.getBdate() %></a></td>
+      <td><%=delivery.getDmid() %></td>
+      <td><%=delivery.getDpid() %></td>
+      <td><%=delivery.getDmaddr() %></td>
+      <td><%=delivery.getDmtel() %></td>
+      <td><%=delivery.getDpprice() %></td>
+      <td><%=delivery.getDdate() %></td>
+
+     
+      <td>
+      
+      <td> <%
+		    if(delivery.getDstatus().equals("1")){
+		    	out.print("<button onclick='confirm_onClick()'> 입금전 </button>");
+		    } else if(delivery.getDstatus().equals("2")){
+		    	out.print("[입금완료]");
+		    } else if(delivery.getDstatus().equals("3")){
+		    	out.print("[배송전]");
+		    } else if(delivery.getDstatus().equals("4")){
+		    	out.print("[배송중]");
+		    } else if(delivery.getDstatus().equals("5")){
+		    	out.print("[배송완료]");
+		    }
+		    %>
+		    </td>
+		    
+	
     </tr>
 <% 	
 	}
@@ -57,11 +77,18 @@ for (DTOdelivery delivery : deliverys) {
   </tbody>
 </table>
 </div>
- <div class="d-grid gap-2 col-6 mx-auto">
-<a href="deliveryinputpage.jsp" class="btn btn-secondary" role="button">게시물 작성</a>
- </div>
 	<br>	<br>	<br>
-
+      <script>
+				function confirm_onClick() {
+					var answer = confirm("상태를 변경하시겠습니까?");
+					
+				if (answer) {
+					location.href = "seilingstatus.jsp";
+				} 
+				}
+			</script>
+	
+			
 <%@ include file = "../footer.jsp" %>
 
 </body>

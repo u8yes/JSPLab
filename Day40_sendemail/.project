@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Day40_sendemail</name>
+	<name>Day40_day41_sendemail</name>
 	<comment></comment>
 	<projects>
 		<project>commons-fileupload-1.4</project>

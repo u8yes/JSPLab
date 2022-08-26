@@ -144,6 +144,25 @@ public class DAOmember {
 	
 	
 	
-	
+	public static int kakaologin(String mname) throws NamingException, SQLException {
+		
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		int result = 0;
+		
+		String sql = "SELECT mname FROM member WHERE mname=?";
+		conn = ConnectionPool.get();
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, mname);
+			
+		rs = stmt.executeQuery();
+		
+		if(!rs.next()) return 3;  // 아이디 비번 모두 없는 비회원 -> 회원 가입
+		
+		return 1;   
+		
+	}
 	
 }

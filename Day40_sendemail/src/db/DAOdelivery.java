@@ -1,9 +1,7 @@
 package db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+
 import java.util.ArrayList;
 
 import javax.naming.NamingException;
@@ -36,7 +34,7 @@ public class DAOdelivery {
 		return result;
 	}
 	
-	public static ArrayList<DTOdelivery> deliveryList() throws NamingException, SQLException{
+	public static ArrayList<DTOdelivery> deliverylist() throws NamingException, SQLException{
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
@@ -47,10 +45,10 @@ public class DAOdelivery {
 		stmt = conn.prepareStatement(sql);
 		rs = stmt.executeQuery();
 		
-		ArrayList<DTOdelivery> delivery = new ArrayList<DTOdelivery>();
+		ArrayList<DTOdelivery> deliverys = new ArrayList<DTOdelivery>();
 		
 		while(rs.next()) {
-			delivery.add(new DTOdelivery(rs.getString(1),
+			deliverys.add(new DTOdelivery(rs.getString(1),
 										rs.getString(2),
 										rs.getString(3),
 										rs.getString(4),
@@ -61,7 +59,8 @@ public class DAOdelivery {
 										rs.getString(9),
 										rs.getString(10)));
 		}
-		return delivery;
+		
+		return deliverys;
 	}
 	
 	
