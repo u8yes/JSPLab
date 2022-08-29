@@ -49,7 +49,7 @@
         </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
     <a id="custom-login-btn" href="javascript:kakaoLogin()">
-    <img src="http://papaspick.com/web/upload/2019_web/icon/kakao_login.jpg" height ="55px" width="305px">
+    <img src="http://papaspick.com/web/upload/2019_web/icon/kakao_login.jpg" class="w-100 btn btn-lg">
     </a>
     <p class="mt-1 mb-3 text-muted">&copy; 2017–2022</p>
   </form>
