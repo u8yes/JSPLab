@@ -41,7 +41,7 @@ body {
 	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">홈</a>
+	          <a class="nav-link active" aria-current="page" href="Crossfade.jsp">홈</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link" href="Crossfade.jsp">제품</a>
@@ -66,7 +66,7 @@ body {
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">관리자전용</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="members.jsp">회원관리</a></li>
-              <li><a class="dropdown-item" href="products.jsp">제품관리</a></li>
+              <li><a class="dropdown-item" href="productlist.jsp">제품관리</a></li>
               <li><a class="dropdown-item" href="selling.jsp">배송관리</a></li>
               <li><a class="dropdown-item" href="boards.jsp">게시판관리</a></li>
 
