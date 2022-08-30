@@ -87,6 +87,25 @@
         -webkit-overflow-scrolling: touch;
       }
       
+      a:link {	/* 방문하기 전의 링크 */
+		color: gray;
+	
+	}
+	
+	a:visited {	/* 방문한 링크 */
+	
+	
+	}
+	
+	a:hover {	/* 링크에 마우스 포인터를 올려 놓았을 때 */
+	
+	
+	}
+	
+	a:active {	/* 링크를 마우스로 클릭한 순간 */
+	
+	
+	}
       
     </style>
 
@@ -116,25 +135,28 @@
     
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img d-block w-100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href="source/img/kyogoo1.gif" width="100%" height="100%" ></svg>
-
-        <div class="container">
-          <div class="carousel-caption ">
-			<strong style="color:black; size: 50px;">교육기관에서 게임식 학습법을 가능하게 해주는 교수매체</strong>
-            <p><a class="btn btn-lg btn-primary" href="#">교수자료</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href="source/img/kyosu1.gif" width="100%" height="100%" ></svg>
-
-        <div class="container">
+      	<div class="container">
           <div class="carousel-caption">
             <strong style="color:black; size: 50px;">교육기관 수업에 적합한 교구 17종을 엄선한 교육기관 전용 교구세트</strong>
             <p><a class="btn btn-lg btn-primary" href="#">오르다 교구세트</a></p>
           </div>
         </div>
       </div>
+      
+      
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href="source/img/Gabe.png" width="100%" height="100%" ></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <strong style="color:black; size: 50px;">아이의 잠재능력을 일깨워주는 창의력 교육</strong>
+            <p><a class="btn btn-lg btn-primary" href="#">자석가베</a></p>
+          </div>
+        </div>
+      </div>
+      
+      
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href="source/img/magazine.gif" width="100%" height="100%" ></svg>
 
@@ -170,7 +192,7 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="source/img/kyogoo1.gif" width="100%" height="100%" ></svg>
 		
         <h2 class="fw-normal">교수자료</h2>
-        <p>각 교구의 교육목표 및 게임방법을 효과적으로 전달할 수 있는 매체로 구성</p>
+        <p>교육기관에서 게임식 학습법을 가능하게 해주는 교수매체</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -204,12 +226,12 @@ ArrayList<DTOproduct> products = DAOproduct.productList();
 		for (DTOproduct product : products) {
 	%>	
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><a href="productdetail.jsp?pid=<%=product.getPid() %>"><%=product.getPname() %></a></h2>
-        <p class="lead"><%=product.getPdesc() %></p>
+        <br><br><h2 class="featurette-heading fw-normal lh-1"><a href="productdetail.jsp?pid=<%=product.getPid() %>"><%=product.getPname() %></a></h2>
+        <br><p class="lead"><%=product.getPdesc() %></p>
 		<p><%=product.getPprice() %></p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="../images/<%=product.getPfilename1() %>" width="100%" height="100%" ></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" ><image href="source/img/<%=product.getPfilename1() %>" width="100%" height="100%" ></svg>
 
       </div>
       <hr class="featurette-divider">

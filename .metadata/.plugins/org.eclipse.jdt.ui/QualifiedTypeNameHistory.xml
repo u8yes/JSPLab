@@ -12,4 +12,5 @@
 <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
 <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.mysql.cj.jdbc.PreparedStatementWrapper"/>
 </qualifiedTypeNameHistroy>

@@ -24,7 +24,7 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">번호</th>
+      <th scope="col">#</th>
       <th scope="col">상품명</th>
       <th scope="col">회원번호</th>
       <th scope="col">상품번호</th>
@@ -61,7 +61,7 @@ for (DTOdelivery delivery : deliverys) {
       
       <%
 	  if(delivery.getDstatus().equals("1")){
-	  out.print("[입금전]");
+		  out.print("<button onclick='confirm_onClick()'> 입금전 </button>");
 	  }else if(delivery.getDstatus().equals("2")){
 		  
 		  %>
@@ -106,7 +106,8 @@ for (DTOdelivery delivery : deliverys) {
 			var answer = confirm("상태를 변경하시겠습니까?");
 			
 			if (answer) {
-				location.href = "seilingstatus.jsp";
+				
+				location.href = "sellingstatus.jsp";
 			} 
 		}
 		

@@ -3,9 +3,9 @@
     pageEncoding="UTF-8"%>
 <%
 
-	String status = request.getParameter("did");
+	String did = request.getParameter("did");
 
-	DAOdelivery.statusup("did");
+	DAOdelivery.statusup(did);
 
 
 %>

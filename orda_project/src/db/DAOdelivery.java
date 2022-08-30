@@ -100,6 +100,7 @@ public class DAOdelivery {
 	}
 	
 	
+	
 	public static int statusup(String did) throws NamingException, SQLException {
 		Connection conn = null;
 		PreparedStatement stmt = null;
