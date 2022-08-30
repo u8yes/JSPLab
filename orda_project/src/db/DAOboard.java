@@ -32,6 +32,29 @@ public class DAOboard {
 		
 	}
 	
+	
+	public static int boardUpdate(String title, String content, String author, String bid) throws NamingException, SQLException  {
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		int result = 0;
+		
+		String sql = "UPDATE board SET title = ?, content = ? WHERE author = ? and bid = ?";
+				
+		//Connection Pool 이용
+		conn= ConnectionPool.get();
+		
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, title);
+			stmt.setString(2, content);		
+			stmt.setString(3, author);		
+			stmt.setString(4, bid);		
+			
+		result = stmt.executeUpdate();
+		// 결과가 성공1 과 실패 0으로 넘어 온다. 
+		
+		return result;
+		
+	}
 
 	
 	public static ArrayList<DTOboard> boardlist() throws NamingException, SQLException{

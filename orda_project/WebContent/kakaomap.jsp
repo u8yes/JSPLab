@@ -47,7 +47,7 @@ var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드�
 
 
 // 주소로 좌표를 검색합니다
-geocoder.addressSearch('서울시 동작구 노량진로 148', function(result, status) {
+geocoder.addressSearch('서울 영등포구 은행로 55', function(result, status) {
 
     // 정상적으로 검색이 완료됐으면 
      if (status === kakao.maps.services.Status.OK) {

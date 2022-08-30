@@ -1,3 +1,5 @@
+<%@page import="db.*"%>
+<%@page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -96,9 +98,16 @@
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   
+ 
+
+
   
   
 <%@ include file="header.jsp" %>  
+  
+
+  
+  
   
 
 <main>
@@ -110,9 +119,9 @@
         <svg class="bd-placeholder-img d-block w-100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href="source/img/kyogoo1.gif" width="100%" height="100%" ></svg>
 
         <div class="container">
-          <div class="carousel-caption text-start">
-            <p>교육기관에서 게임식 학습법을 가능하게 해주는 교수매체</p>
-            <p><a class="btn btn-lg btn-primary" href="#">교수 자료</a></p>
+          <div class="carousel-caption ">
+			<strong style="color:black; size: 50px;">교육기관에서 게임식 학습법을 가능하게 해주는 교수매체</strong>
+            <p><a class="btn btn-lg btn-primary" href="#">교수자료</a></p>
           </div>
         </div>
       </div>
@@ -121,7 +130,7 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <p>교육기관 수업에 적합한 교구 17종을 엄선한 교육기관 전용 교구세트</p>
+            <strong style="color:black; size: 50px;">교육기관 수업에 적합한 교구 17종을 엄선한 교육기관 전용 교구세트</strong>
             <p><a class="btn btn-lg btn-primary" href="#">오르다 교구세트</a></p>
           </div>
         </div>
@@ -130,12 +139,13 @@
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><image href="source/img/magazine.gif" width="100%" height="100%" ></svg>
 
         <div class="container">
-          <div class="carousel-caption text-end">
-            <p>월 1회 게임활동 포함</p>
+          <div class="carousel-caption ">
+            <strong style="color:black; size: 50px;">월 1회 게임활동 포함</strong>
             <p><a class="btn btn-lg btn-primary" href="#">활동지</a></p>
           </div>
         </div>
       </div>
+      
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
@@ -157,72 +167,61 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="source/img/kyogoo1.gif" width="100%" height="100%" ></svg>
 		
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <h2 class="fw-normal">교수자료</h2>
+        <p>각 교구의 교육목표 및 게임방법을 효과적으로 전달할 수 있는 매체로 구성</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="source/img/kyosu1.gif" width="100%" height="100%" ></svg>
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2 class="fw-normal">오르다 교구세트</h2>
+		<p>교육기관 수업에 적합한 교구 17종을 엄선한 교육기관 전용 교구세트</p>        
+		<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="source/img/magazine.gif" width="100%" height="100%" ></svg>
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
+        <h2 class="fw-normal">활동지</h2>
+        <p>게임판과 카드, 주사위, 게임말 등을 손쉽게 만들어 재미있게 수학개념을 인지하도록 구성</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
+<%
+ 
+
+ArrayList<DTOproduct> products = DAOproduct.productList();
+%>
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
+    <% 
+		for (DTOproduct product : products) {
+	%>	
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1"><a href="productdetail.jsp?pid=<%=product.getPid() %>"><%=product.getPname() %></a></h2>
+        <p class="lead"><%=product.getPdesc() %></p>
+		<p><%=product.getPprice() %></p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="../images/<%=product.getPfilename1() %>" width="100%" height="100%" ></svg>
 
       </div>
+      <hr class="featurette-divider">
+    <% 	
+		}
+	%>
+	
     </div>
 
-    <hr class="featurette-divider">
+    
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
+   
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->

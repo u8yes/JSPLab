@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<%@ include file = "header.jsp" %>
+<%@ include file = "../header.jsp" %>
         
 <%
 	mname = (String)session.getAttribute("mname");
@@ -57,7 +57,7 @@ for (DTOproduct product : products) {
 
 
 
-<%@ include file = "footer.jsp" %>
+<%@ include file = "../footer.jsp" %>
         
 </body>
 </html>

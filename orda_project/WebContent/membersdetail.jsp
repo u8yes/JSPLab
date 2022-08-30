@@ -27,7 +27,7 @@
 
 <div class="container">
 <div class="card">
-  <img src="images/<%=member.getMiname() %>" width=300px class="card-img-top" alt="...">
+  <img src="../images/<%=member.getMiname() %>" width=300px class="card-img-top" alt="...">
 
   <div class="card-body">
     <h5 class="card-title"><%=member.getMname() %></h5>

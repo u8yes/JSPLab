@@ -73,7 +73,7 @@
 	}
 
 	DAOproduct.productinsert(pid, pname, pdesc, pprice, pimagename1, pimagename2, pimagename3);
-	response.sendRedirect("productdetail.jsp");
+	response.sendRedirect("productlist.jsp");
 %> 
 
    

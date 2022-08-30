@@ -57,8 +57,8 @@
 		</div>
 	</div>
 	
-		<div class="form-group row">
-		<label class="col-sm-2 d-flex justify-content-end">본인성별</label>
+	<div class="form-group row">
+	<label class="col-sm-2 d-flex justify-content-end">본인성별</label>
 		<div class="col-sm-5">
 			<div class="form-check form-check-inline">
 			  <input class="form-check-input" type="radio" name="mgender" id="inlineRadio1" value="남성">
@@ -67,9 +67,9 @@
 			<div class="form-check form-check-inline">
 			  <input class="form-check-input" type="radio" name="mgender" id="inlineRadio2" value="여성">
 			  <label class="form-check-label" for="inlineRadio2">여성</label>
-			</div>
-
 		</div>
+
+	</div>
 	</div>
 	
 	<!-- 우편번호 API -->
@@ -136,22 +136,22 @@
 	
 	
 	
-	<div class="form-group row">
+	<div class="form-group row ">
 		<label class="col-sm-2  d-flex justify-content-end">배송주소</label>
 		<div class="col-sm-5">
-			<input name="postAddr1" text" id="sample4_postcode" placeholder="우편번호">
+			<input text" id="sample4_postcode" placeholder="우편번호">
 			<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
-			<input class="form-control" name="maddr" type="text" id="sample4_roadAddress" placeholder="도로명주소  + 상세주소" size="60" ><br>
+			<input name="maddr" class="form-control" type="text" id="sample4_roadAddress" placeholder="도로명주소  + 상세주소" size="60" >
 			<input type="hidden" id="sample4_jibunAddress" placeholder="지번주소"  size="60">
 			<span id="guide" style="color:#999;display:none"></span>
 			<input type="hidden" id="sample4_extraAddress" placeholder="참고항목"  size="60">
-			<input type="hidden" id="sample4_engAddress" placeholder="영문주소"  size="60" ><br>
+			<input type="hidden" id="sample4_engAddress" placeholder="영문주소"  size="60" >
 			
 			<%
-			String  addr1= request.getParameter("postAddr1");
-			String  addr2= request.getParameter("postAddr2");
-			String  addr3= request.getParameter("postAddr3");
-			String maddr = addr1+" "+addr2+" "+addr3;
+			String  addr1 = request.getParameter("postAddr1");
+			String  addr2 = request.getParameter("postAddr2");
+			String  addr3 = request.getParameter("postAddr3");
+			String  maddr = addr1+" "+addr2+" "+addr3;
 			%>
 		</div>
 	</div>

@@ -14,9 +14,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
   <!-- 서머노트를 위해 추가해야할 부분 -->
-  <script src="${pageContext.request.contextPath}/resource/summernote/summernote-lite.js"></script>
-  <script src="${pageContext.request.contextPath}/resource/summernote/lang/summernote-ko-KR.js"></script>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/summernote/summernote-lite.css">
+  <script src="${pageContext.request.contextPath}/source/summernote/summernote-lite.js"></script>
+  <script src="${pageContext.request.contextPath}/source/summernote/lang/summernote-ko-KR.js"></script>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/source/summernote/summernote-lite.css">
   <!--  -->
   
 </head>
@@ -37,7 +37,9 @@
 
 <div class="container align-items-center" >
 
-<form action="boardedit.jsp" >
+<form action="boardeditinput.jsp" >
+
+<input type="hidden" name="bid" value="<%=bid %>"> 
 	<div class="form-group row">
 		<label class="col-sm-2 d-flex justify-content-end">제목</label>
 		<div class="col-sm-7">
@@ -48,7 +50,8 @@
 	<div class="form-group row">
 		<label class="col-sm-2 d-flex justify-content-end">내용</label>
 		<div class="col-sm-7">
-  <textarea name="content" class="summernote"><%=board.getContent() %></textarea>    
+  <textarea name="content" class="summernote"><%=board.getContent() %></textarea> 
+    
 </div>
 <script>
 $('.summernote').summernote({

@@ -43,7 +43,7 @@
 		imgstr = "images/" + img;
 	} */
 %>
-TEST
+
 <%= product.getPdesc() %>
 
 	<div class="form-group row">

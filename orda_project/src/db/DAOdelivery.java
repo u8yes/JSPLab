@@ -36,7 +36,7 @@ public class DAOdelivery {
 		return result;
 	}
 	
-	public static ArrayList<DTOdelivery> deliverylist() throws NamingException, SQLException{
+	public static ArrayList<DTOdelivery> deliveryList() throws NamingException, SQLException{
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
@@ -64,5 +64,72 @@ public class DAOdelivery {
 		return deliverys;
 	}
 	
+	
+	
+	
+	
+	public static DTOdelivery deliveryDetail(String did) throws NamingException, SQLException {
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		String sql = "SELECT * FROM delivery WHERE did=? ";
+		conn= ConnectionPool.get();
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, did);	
+		rs = stmt.executeQuery();
+		
+		rs.next();
+		
+		did = rs.getString(1);
+		String dpid = rs.getString(2);
+		String dmid = rs.getString(3);
+		String dmaddr= rs.getString(4);
+		String dmtel = rs.getString(5);
+		String dpname = rs.getString(6);
+		String dpprice = rs.getString(7);
+		String dstatus = rs.getString(8);
+		String ddone = rs.getString(9);
+		String ddate = rs.getString(10);
+		
+		
+		
+		DTOdelivery delivery = new DTOdelivery(did,dpid,dmid,dmaddr,dmtel,dpname,dpprice,dstatus,ddone,ddate);
+		
+		return delivery;
+	}
+	
+	
+	public static int statusup(String did) throws NamingException, SQLException {
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		
+		String sql = "SELECT did, dstatus FROM delivery WHERE did=? ";
+		conn= ConnectionPool.get();
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, did);
+		rs = stmt.executeQuery();
+	
+		rs.next();
+	
+		String dstatus = rs.getString(2);
+	
+		int dstatusint = Integer.parseInt(dstatus);
+	
+		dstatusint++;
+	
+		String sql2 = "UPDATE delivery SET dstatus = ? WHERE did=?";
+		conn= ConnectionPool.get();
+		stmt = conn.prepareStatement(sql2);
+			stmt.setInt(1, dstatusint);
+			stmt.setString(2, did);
+	
+			int result = stmt.executeUpdate();
+	
+			return result;
+	}
+
 	
 }

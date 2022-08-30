@@ -33,7 +33,7 @@
   <tbody>
   
   <%
-ArrayList<DTOdelivery> deliverys = DAOdelivery.deliverylist();
+ArrayList<DTOdelivery> deliverys = DAOdelivery.deliveryList();
 
 for (DTOdelivery delivery : deliverys) {
 %>		

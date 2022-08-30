@@ -6,15 +6,20 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+
 <body>
 <% 
 		//세션 정보 삭제
 		session.removeAttribute("mname");
-
-
+		
+		
 		out.println("<script>alert('로그아웃 되었습니다.');</script>");
 		out.println("<script>location.href='Crossfade.jsp'</script>");
 		
 %>
 </body>
+
+
+
 </html>

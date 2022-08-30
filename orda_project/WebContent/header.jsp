@@ -67,8 +67,8 @@ body {
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="members.jsp">회원관리</a></li>
               <li><a class="dropdown-item" href="productlist.jsp">제품관리</a></li>
-              <li><a class="dropdown-item" href="selling.jsp">배송관리</a></li>
-              <li><a class="dropdown-item" href="boards.jsp">게시판관리</a></li>
+              <li><a class="dropdown-item" href="deliverylist.jsp">배송관리</a></li>
+              <li><a class="dropdown-item" href="boardlist.jsp">게시판관리</a></li>
 
            	</ul>
           	</li> 

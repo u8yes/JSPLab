@@ -14,13 +14,17 @@
 	String title = request.getParameter("title");
 	String content = request.getParameter("content");
 	String author = (String)session.getAttribute("mname");
+	String bid = request.getParameter("bid");
+	
 	if(author == null){
-		author = "방문객";
+		out.print("방문객");
 	}
 
 	
-	DAOboard.boardinsert(title, content, author);
-	
-	response.sendRedirect("boardlist.jsp");
+ 	DAOboard.boardUpdate(title, content, author, bid);
+	response.sendRedirect("boardlist.jsp"); 
 
 %>
+
+
+
