@@ -15,7 +15,7 @@
 		
 		
 		out.println("<script>alert('로그아웃 되었습니다.');</script>");
-		out.println("<script>location.href='Crossfade.jsp'</script>");
+		out.println("<script>location.href='productlist.jsp'</script>");
 		
 %>
 </body>

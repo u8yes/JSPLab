@@ -18,9 +18,9 @@ public class DbConnClose {
 	// 3.Connection Object
 		Connection conn = null;
 
-		String url = "jdbc:mysql://localhost:3307/orda_intranet";
-		String id = "root";
-		String pw = "0000";
+		String url = "jdbc:mysql://localhost:3306/orda_intranet";
+		String id = "herbtea7";
+		String pw = "dPtnsla**486";
 		
 		try {
 		conn = DriverManager.getConnection(url, id, pw);

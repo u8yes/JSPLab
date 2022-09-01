@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Automatic-Module-Name: org.apache.commons.io
-Bnd-LastModified: 1661499469925
-Build-Jdk-Spec: 1.8
+Bnd-LastModified: 1662001684446
+Build-Jdk-Spec: 11
 Bundle-Description: The Apache Commons IO library contains utility class
  es, stream implementations, file filters,file comparators, endian trans
  formation classes, and much more.

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Built-By: tjouen-jr
+Build-Jdk: 11.0.16.1
+Created-By: Maven Integration for Eclipse
+Extension-Name: javax.mail
+Implementation-Title: javax.mail
+Implementation-Vendor: Oracle
+Implementation-Vendor-Id: com.sun
+Implementation-Version: 1.4.7
+Probe-Provider-XML-File-Names: META-INF/gfprobe-provider.xml
+Specification-Title: JavaMail(TM) API Design Specification
+Specification-Vendor: Oracle
+Specification-Version: 1.4
+

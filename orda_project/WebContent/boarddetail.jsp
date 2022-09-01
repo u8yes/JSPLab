@@ -21,6 +21,10 @@
   
 </head>
 <body>
+
+
+
+
 <%@ include file = "header.jsp" %>
 
 <div class="alert alert-secondary" role="alert">
@@ -67,7 +71,9 @@ var edit = function() {
 		<label class="col-sm-2 d-flex justify-content-end"></label>
 		<div class="col-sm-7 ">
 			<a href="boardlist.jsp" class="btn btn-secondary" role="button">목록 &raquo;</a>		
-			<a href="boardeditpage.jsp?bid=<%=board.getBid() %>" class="btn btn-danger" role="button">수정 &raquo;</a>		
+			<a href="boardeditpage.jsp?bid=<%=board.getBid() %>" class="btn btn-warning" role="button">수정 &raquo;</a>		
+			<a href="boardDeleteCheck.jsp?bid=<%=board.getBid() %>" class="btn btn-danger" role="button">삭제 &raquo;</a>		
+		
 		</div>	
 	</div>
 
@@ -76,6 +82,7 @@ var edit = function() {
 <br><br><br>
 	
 <%@ include file = "footer.jsp" %>	
+
 
 </body>
 </html>

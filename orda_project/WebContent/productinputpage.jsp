@@ -134,9 +134,7 @@ $('.summernote').summernote({
 </div>
 
 <br><br>
-<!-- <footer class="container">
-	<p> &copy; Austin Yoon</p>
-</footer> -->
+
 
 <%@ include file="footer.jsp" %>
 

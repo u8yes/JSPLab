@@ -42,3 +42,56 @@
 2022-08-26 09:23:30,684 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-08-26 12:46:32,268 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2022-08-26 14:58:41,178 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-01 10:52:15,243 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-01 12:01:14,215 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-01 12:07:59,155 [Worker-29: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: commons-fileupload:commons-fileupload:1.4 @ D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\pom.xml.
+2022-09-01 12:07:59,952 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Executing tasks
+2022-09-01 12:08:00,029 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Executed tasks
+2022-09-01 12:08:00,253 [Worker-30: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: commons-fileupload:commons-fileupload:1.4 @ D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\pom.xml.
+2022-09-01 12:08:00,265 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:00,265 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\src\main\resources
+2022-09-01 12:08:00,273 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:01,094 [Worker-30: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: javax.mail:mail:1.4.7 @ D:\yoon_dev\JSPLab\mail-1.4.7\src\META-INF\maven\javax.mail\mail\pom.xml.
+2022-09-01 12:08:01,191 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Manifest commons-fileupload:commons-fileupload:jar:1.4 : Unused Export-Package instructions: [org.apache.commons.*] 
+2022-09-01 12:08:01,192 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Manifest commons-fileupload:commons-fileupload:jar:1.4 : No translation found for macro: scmBranch
+2022-09-01 12:08:01,192 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Manifest commons-fileupload:commons-fileupload:jar:1.4 : No translation found for macro: buildNumber
+2022-09-01 12:08:01,196 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:01,196 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\src\test\resources
+2022-09-01 12:08:01,196 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:01,988 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:01,988 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\src\main\resources
+2022-09-01 12:08:01,995 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:02,029 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:02,029 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\src\test\resources
+2022-09-01 12:08:02,029 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:02,691 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: commons-io:commons-io:2.11.0 @ D:\yoon_dev\JSPLab\commons-io-2.11.0\src\META-INF\maven\commons-io\commons-io\pom.xml.
+2022-09-01 12:08:02,885 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: commons-fileupload:commons-fileupload:1.4 @ D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\pom.xml.
+2022-09-01 12:08:03,541 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Enabled default license matchers.
+2022-09-01 12:08:03,545 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Will parse SCM ignores for exclusions...
+2022-09-01 12:08:03,546 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Finished adding exclusions from SCM ignore files.
+2022-09-01 12:08:03,546 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - 62 implicit excludes (use -debug for more details).
+2022-09-01 12:08:03,546 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - 12 explicit excludes (use -debug for more details).
+2022-09-01 12:08:03,550 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - 2 resources included (use -debug for more details)
+2022-09-01 12:08:03,604 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Rat check: Summary over all files. Unapproved: 1, unknown: 1, generated: 0, approved: 1 licenses.
+2022-09-01 12:08:03,781 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:03,782 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-io-2.11.0\src\META-INF\maven\commons-io\commons-io\src\main\resources
+2022-09-01 12:08:03,782 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:04,462 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Manifest commons-io:commons-io:jar:2.11.0 : Unused Export-Package instructions: [org.apache.commons.io.*] 
+2022-09-01 12:08:04,467 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:04,467 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-io-2.11.0\src\META-INF\maven\commons-io\commons-io\src\test\resources
+2022-09-01 12:08:04,468 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:05,081 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:05,081 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\src\main\resources
+2022-09-01 12:08:05,082 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:05,089 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:05,089 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\commons-fileupload-1.4\src\META-INF\maven\commons-fileupload\commons-fileupload\src\test\resources
+2022-09-01 12:08:05,090 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource to META-INF
+2022-09-01 12:08:05,253 [Worker-30: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: javax.mail:mail:1.4.7 @ D:\yoon_dev\JSPLab\mail-1.4.7\build\classes\META-INF\maven\javax.mail\mail\pom.xml.
+2022-09-01 12:08:05,562 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:05,562 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\mail-1.4.7\build\classes\META-INF\maven\javax.mail\mail\src\main\resources
+2022-09-01 12:08:05,563 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:05,563 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\mail-1.4.7\build\classes\META-INF\maven\javax.mail\mail\src\test\resources
+2022-09-01 12:08:05,765 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:05,766 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\mail-1.4.7\src\META-INF\maven\javax.mail\mail\src\main\resources
+2022-09-01 12:08:05,766 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'iso-8859-1' encoding to copy filtered resources.
+2022-09-01 12:08:05,766 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\yoon_dev\JSPLab\mail-1.4.7\src\META-INF\maven\javax.mail\mail\src\test\resources

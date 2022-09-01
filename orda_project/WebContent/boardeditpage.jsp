@@ -21,6 +21,9 @@
   
 </head>
 <body>
+
+
+
 <%@ include file = "header.jsp" %>
 
 <div class="alert alert-secondary" role="alert">
@@ -77,8 +80,9 @@ $('.summernote').summernote({
 
 	<div class="form-group row">
 		<div class="col-sm-offset-2 col-sm-10">
-			<input type="submit" class="btn btn-primary" value="임시수정">
-			<input type="reset" class="btn btn-danger" value="임시목록" onclick="reset()">
+			<input type="submit" class="btn btn-primary" value="수정">
+			<input type="reset" class="btn btn-danger" value="목록" onclick="reset()">
+			
 		</div>	
 	</div>
 
@@ -87,6 +91,8 @@ $('.summernote').summernote({
 <br><br><br>
 	
 <%@ include file = "footer.jsp" %>	
+
+
 
 </body>
 </html>

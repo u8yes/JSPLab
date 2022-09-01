@@ -18,8 +18,8 @@
 		//로그인 성공 후 세션넣기
 		session.setAttribute("mname", mname);
 		
-		out.println("<script>alert('로그인 성공, 제품목록으로 이동');</script>");
-		out.println("<script>location.href='Crossfade.jsp';</script>");
+		out.println("<script>alert('로그인되었습니다.');</script>");
+		out.println("<script>location.href='productlist.jsp';</script>");
 	}else if (result == 2) {
 		out.println("<script>alert('비밀번호 불일치, 재로그인');</script>");
 		out.println("<script>location.href='login.jsp';</script>");

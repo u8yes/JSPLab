@@ -55,6 +55,27 @@ public class DAOboard {
 		return result;
 		
 	}
+	
+	
+	public static int boardDelete(String bid, String author) throws NamingException, SQLException  {
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		int result = 0;
+		
+		String sql = "DELETE FROM board WHERE (bid=?) and (author=?) ";
+		//Connection Pool 이용
+		conn= ConnectionPool.get();
+		
+		stmt = conn.prepareStatement(sql);
+			stmt.setString(1, bid);
+			stmt.setString(2, author);			
+			
+		result = stmt.executeUpdate();
+		// 결과가 성공1 과 실패 0으로 넘어 온다. 
+		
+		return result;
+			
+	}
 
 	
 	public static ArrayList<DTOboard> boardlist() throws NamingException, SQLException{

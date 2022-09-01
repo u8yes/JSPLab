@@ -21,4 +21,4 @@
 		out.println("<script>location.href='memberinputpage.jsp';</script>");
 	}
 
-%>
+%> 

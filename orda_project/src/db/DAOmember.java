@@ -121,24 +121,24 @@ public class DAOmember {
 			
 			
 	public static int memberout(String mname, String mpass) throws NamingException, SQLException  {
-				Connection conn = null;
-				PreparedStatement stmt = null;
-				int result = 0;
+			Connection conn = null;
+			PreparedStatement stmt = null;
+			int result = 0;
+			
+			String sql = "DELETE FROM member WHERE (mname=?) and (mpass=?) ";
+			//Connection Pool 이용
+			conn= ConnectionPool.get();
+			
+			stmt = conn.prepareStatement(sql);
+				stmt.setString(1, mname);
+				stmt.setString(2, mpass);			
 				
-				String sql = "DELETE FROM member WHERE (mname=?) and (mpass=?) ";
-				//Connection Pool 이용
-				conn= ConnectionPool.get();
+			result = stmt.executeUpdate();
+			// 결과가 성공1 과 실패 0으로 넘어 온다. 
+			
+			return result;
 				
-				stmt = conn.prepareStatement(sql);
-					stmt.setString(1, mname);
-					stmt.setString(2, mpass);			
-					
-				result = stmt.executeUpdate();
-				// 결과가 성공1 과 실패 0으로 넘어 온다. 
-				
-				return result;
-				
-			}
+	}
 			
 	public static ArrayList<DTOmember> memberlist() throws NamingException, SQLException{
 		Connection conn = null;

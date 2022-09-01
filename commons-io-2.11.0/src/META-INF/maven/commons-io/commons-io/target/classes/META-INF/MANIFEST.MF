@@ -1,34 +1,33 @@
 Manifest-Version: 1.0
-Implementation-Title: Apache Commons IO
-Bundle-Description: The Apache Commons IO library contains utility cla
- sses, stream implementations, file filters,file comparators, endian t
- ransformation classes, and much more.
-Automatic-Module-Name: org.apache.commons.io
-Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
-Bundle-SymbolicName: org.apache.commons.commons-io
-Implementation-Version: 2.11.0
-Specification-Vendor: The Apache Software Foundation
-Bnd-LastModified: 1661499469925
-Bundle-ManifestVersion: 2
+Build-Jdk-Spec: 11
 Specification-Title: Apache Commons IO
-Bundle-DocURL: https://commons.apache.org/proper/commons-io/
-Bundle-Vendor: The Apache Software Foundation
-Import-Package: sun.misc;resolution:=optional,sun.nio.ch;resolution:=o
- ptional
-Tool: Bnd-5.1.2.202007211702
-Implementation-Vendor: The Apache Software Foundation
-Originally-Created-By: Maven Integration for Eclipse
-Export-Package: org.apache.commons.io;version="1.4.9999",org.apache.co
- mmons.io.comparator;version="1.4.9999",org.apache.commons.io.comparat
- or;version="2.11.0",org.apache.commons.io.filefilter;version="1.4.999
- 9",org.apache.commons.io.filefilter;version="2.11.0",org.apache.commo
- ns.io.input;version="1.4.9999",org.apache.commons.io.input;version="2
- .11.0",org.apache.commons.io.output;version="1.4.9999",org.apache.com
- mons.io.output;version="2.11.0",org.apache.commons.io;version="2.11.0
- "
-Bundle-Name: Apache Commons IO
-Bundle-Version: 2.11.0
-Build-Jdk-Spec: 1.8
 Specification-Version: 2.11
+Specification-Vendor: The Apache Software Foundation
+Implementation-Title: Apache Commons IO
+Implementation-Version: 2.11.0
+Implementation-Vendor: The Apache Software Foundation
+Automatic-Module-Name: org.apache.commons.io
 Created-By: Apache Maven Bundle Plugin
+Bnd-LastModified: 1662001684446
+Bundle-Description: The Apache Commons IO library contains utility class
+ es, stream implementations, file filters,file comparators, endian trans
+ formation classes, and much more.
+Bundle-DocURL: https://commons.apache.org/proper/commons-io/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons IO
+Bundle-SymbolicName: org.apache.commons.commons-io
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.11.0
+Export-Package: org.apache.commons.io;version="1.4.9999",org.apache.comm
+ ons.io.comparator;version="1.4.9999",org.apache.commons.io.comparator;v
+ ersion="2.11.0",org.apache.commons.io.filefilter;version="1.4.9999",org
+ .apache.commons.io.filefilter;version="2.11.0",org.apache.commons.io.in
+ put;version="1.4.9999",org.apache.commons.io.input;version="2.11.0",org
+ .apache.commons.io.output;version="1.4.9999",org.apache.commons.io.outp
+ ut;version="2.11.0",org.apache.commons.io;version="2.11.0"
+Import-Package: sun.misc;resolution:=optional,sun.nio.ch;resolution:=opt
+ ional
+Originally-Created-By: Maven Integration for Eclipse
+Tool: Bnd-5.1.2.202007211702
 

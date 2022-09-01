@@ -21,6 +21,7 @@
 	}
 
 	
+	
  	DAOboard.boardUpdate(title, content, author, bid);
 	response.sendRedirect("boardlist.jsp"); 
 

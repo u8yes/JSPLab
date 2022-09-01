@@ -3,6 +3,11 @@
 	<name>orda_project</name>
 	<comment></comment>
 	<projects>
+		<project>activation-1.1.1</project>
+		<project>commons-fileupload-1.4</project>
+		<project>mail-1.4.7</project>
+		<project>mysql-connector-java-8.0.26</project>
+		<project>commons-io-2.11.0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

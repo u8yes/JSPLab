@@ -34,25 +34,23 @@ body {
  
   <nav class="navbar navbar-expand-lg bg-light fixed-top">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#"><img src="source/img/logo.png"></a>
+	    <a class="navbar-brand" href="productlist.jsp"><img src="source/img/logo.png"></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="Crossfade.jsp">홈</a>
+	          <a class="nav-link active" aria-current="page" href="productlist.jsp">홈</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="Crossfade.jsp">제품</a>
+	          <a class="nav-link" href="productlist.jsp">제품</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link" href="boardlist.jsp">게시판</a>
 	        </li>
 	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            회원
-	          </a>
+	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">회원	</a>
 	          <ul class="dropdown-menu" style=" position: absolute; z-index: 1;">
 	            <li><a class="dropdown-item" href="login.jsp">로그인</a></li>
 	            <li><a class="dropdown-item" href="logout.jsp">로그아웃</a></li>
@@ -62,16 +60,7 @@ body {
 	          </ul>
 	        </li>
 	        
-	        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">관리자전용</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="members.jsp">회원관리</a></li>
-              <li><a class="dropdown-item" href="productlist.jsp">제품관리</a></li>
-              <li><a class="dropdown-item" href="deliverylist.jsp">배송관리</a></li>
-              <li><a class="dropdown-item" href="boardlist.jsp">게시판관리</a></li>
-
-           	</ul>
-          	</li> 
+	        
           
 	        <li class="nav-item">
 	          <a class="nav-link" href="kakaomap.jsp">오시는 길</a>
@@ -89,8 +78,6 @@ body {
   
   
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
 
 </body>
 </html>
